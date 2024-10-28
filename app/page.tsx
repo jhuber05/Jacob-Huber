@@ -1,18 +1,11 @@
 "use client";
 
-import AboutLink from "@/app/components/AboutPageLink";
-import FaqsLink from "@/app/components/FaqsPageLink";
-import LearnMoreLink from "@/app/components/LearnMorePageLink";
+import Navbar from "@/app/components/Navbar";
 
 export default function Home() {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-start bg-black">
-      <div className="w-full flex flex-row justify-end items-center p-4 bg-blue-800 space-x-4">
-        <AboutLink />
-        <FaqsLink />
-        <LearnMoreLink />
-      </div>
-
+      <Navbar />
       <div className="flex flex-col items-center justify-center flex-grow">
         <h1 className="text-3xl font-bold text-white">Jacob Huber&apos;s Website</h1>
         <button
